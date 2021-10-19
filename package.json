@@ -6,7 +6,10 @@
   "author": "Erit Islami <eritislami@gmail.com>",
   "private": true,
   "homepage": "https://github.com/eritislami/evobot",
-  "repository": "github:eritislami/evobot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/payyyyyy/mdnbot.git"
+  },
   "bugs": "https://github.com/eritislami/evobot/issues",
   "engines": {
     "node": ">=14.0.0"
@@ -26,8 +29,9 @@
   },
   "scripts": {
     "start": "node index.js",
-    "commit": "cz"
+    "node .": "node run index.js"
   },
+  
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0"
   },
